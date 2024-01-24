@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1vw;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  color: rgba(255,255,255,.3);
+  text-align: center;
+  font-size: calc(12px + 1vw);
+}
+
+.white-circle {
+  position: relative;
+  width: calc(12px + 1vw);
+  background-color: rgb(206, 205, 204);
+  border: 1px solid black;
+  border-radius: calc(12px + 1vw);
+}
+
+.red-circle {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -50%);
+  background-color: red;
+  border: 1px solid black;
+  border-radius: calc(12px + 1vw);
+}

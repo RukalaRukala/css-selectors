@@ -1,0 +1,100 @@
+.table {
+  background-image: url('../assets/images/map.png');
+  margin-left: auto;
+  margin-right: auto;
+  background-size: 100% 100%;
+  height: 17vw;
+  left: 3vw;
+  width: 70%;
+  position: relative;
+}
+
+.objects {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 1.5em;
+  height: 5vw;
+  width: 50vw;
+  position: absolute;
+  top: 4.3vw;
+  left: 3vw;
+}
+.discription {
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+}
+
+.objects div {
+  position: relative;
+  width: 5vw;
+  height: 5 vw;
+}
+
+.objects img {
+  width: 5vw;
+  left: 0;
+}
+
+
+.objects img:hover {
+  cursor: pointer;
+}
+
+
+.deleted {
+  position: absolute;
+  height: 5vw;
+  left: 0;
+  transition: 2s;
+}
+
+.bit {
+  animation: bit 1s infinite;
+}
+
+@keyframes bit {
+  0% {scale: 1;}
+  50% {scale: 0.8;}
+  100% {scale: 1;}
+}
+
+.inner {
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  top: -5.5vw;
+  left: 1vw;
+  z-index: 1;
+}
+
+.pierce {
+  left: -1vw;
+  width: 7vw;
+  animation: pierce 1.5s infinite;
+}
+
+@keyframes pierce {
+  0% {transform: translateX(-2vw);}
+  50% {transform: translateX(2vw);}
+  100% {transform: translateX(-2vw);}
+}
+
+.objects div {
+  transition: all 1.5s ease;
+}
+
+.spinning {
+  scale: 0;
+  rotate: 1800deg;
+}
+
+.fly {
+  animation: fly 1.5s infinite;
+}
+
+@keyframes fly {
+  0% {transform: translateY(-2vw);}
+  50% {transform: translateY(2vw);}
+  100% {transform: translateY(-2vw);}
+}

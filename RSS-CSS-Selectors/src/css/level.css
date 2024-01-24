@@ -1,0 +1,27 @@
+.help-button,
+.reset-button {
+  background-color: rgba(161, 174, 204, 0.9);
+  color: #30399c;
+  width: calc(60px + 1vw);
+  margin-left: auto;
+  margin-right: auto;
+  font-size: (10px + 1vw);
+  transition: 0.5s;
+}
+
+.help-button:hover,
+.reset-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.level:hover {
+  cursor: pointer;
+  color: red;
+  text-decoration: underline;
+}
+
+.red-highlight {
+  border: 1px solid red;
+}

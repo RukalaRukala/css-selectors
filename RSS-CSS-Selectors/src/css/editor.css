@@ -1,0 +1,121 @@
+.editor {
+  display: flex;
+  flex-direction: row;
+}
+
+.css-editor,
+.html-viewer {
+  width: 50%;
+  height: 100%;
+}
+
+.editor-header,
+.viewer-header {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(57, 92, 149);
+}
+
+.editor span {
+  margin: 1.5%;
+}
+
+.area {
+  display: flex;
+  flex-direction: row;
+}
+
+.editor-area {
+  background-color: rgba(194, 204, 231, 0.8);
+}
+
+.viewer-area {
+  background-color: rgba(40, 56, 99, 01);
+  color: rgba(227, 231, 241, 0.9);
+}
+
+.line-numbers {
+  width: 10%;
+  background-color:  rgba(145, 155, 179, 0.9);
+  color: rgba(57, 77, 126, 0.9);
+  padding: 3% 2% 1% 2%;
+  text-align: right;
+}
+
+.editor-input {
+  width: 90%;
+  padding: 1.3% 2% 1% 2%;
+  color: rgba(57, 77, 126, 0.9);
+}
+
+.viewer {
+  width: 90%;
+  padding: 3% 2% 1% 2%;
+  color: rgba(161, 174, 204, 0.9)
+}
+
+.viewer div pre {
+  margin: 0;
+}
+
+.viewer div:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.in-wrapper {
+  width: 70%;
+  height: 5%;
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0% {background-color: white;}
+  50% {background-color: white;}
+  51% {background-color: rgb(143, 246, 234, 0.5);}
+  100% {background-color: rgb(143, 246, 234, 0.5);}
+}
+
+.input-selector {
+  width: 97%;
+  background: transparent;
+}
+
+.enter-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+  background-color: white;
+  border: 1px solid rgb(133, 133, 133);
+  padding: 0.3vw;
+  transition: 0.5s;
+}
+
+.enter-button:hover {
+  cursor: pointer;
+  background-color: rgba(57, 77, 126, 0.9);
+  color: white;
+}
+
+#window {
+  position: absolute;
+  width: 8vw;
+  height: 2vw;
+  background-color: rgb(224, 224, 143);
+  border: 1px solid rgb(98, 98, 98);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(3px + 0.7vw);
+}
